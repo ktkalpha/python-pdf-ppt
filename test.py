@@ -1,10 +1,12 @@
 import collections 
 import collections.abc
 import fitz
+import os
+os.mkdir("./output")
+
 
 from pptx import Presentation
 from pptx.util import Cm
-
 prs = Presentation()
 blank_slide_layout = prs.slide_layouts[6]
 print(
